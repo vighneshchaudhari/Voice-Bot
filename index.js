@@ -14,7 +14,7 @@ const {
 const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates]
 });
-client.once('ready', () => {
+client.once('clientReady', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
 
