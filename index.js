@@ -41,13 +41,13 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
     }
 });
 
-console.log("TOKEN EXISTS:", !!process.env.DISCORD_TOKEN);
-console.log("TOKEN LENGTH:", process.env.DISCORD_TOKEN?.length);
+console.log("TOKEN EXISTS:", !!process.env.TOKEN);
+console.log("TOKEN LENGTH:", process.env.TOKEN?.length);
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
 
-client.login(process.env.DISCORD_TOKEN)
+client.login(process.env.TOKEN)
     .then(() => console.log('Login request sent'))
     .catch(console.error);
