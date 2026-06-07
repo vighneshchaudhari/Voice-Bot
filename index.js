@@ -46,6 +46,6 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
 
-client.login('MTUxMzAyOTMwNDcwNTg3NjA5OA.G0ebFe.fM3n5nOwfutdfQxZQiKBP7I8Za9O6Z-Yce7Chw')
+client.login('process.env.TOKEN')
     .then(() => console.log('Login request sent'))
     .catch(console.error);
