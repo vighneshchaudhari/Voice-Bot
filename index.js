@@ -41,8 +41,8 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
     }
 });
 
-console.log("TOKEN EXISTS:", !!process.env.DiSCORD_TOKEN);
-console.log("TOKEN LENGTH:", process.env.TOKEN?.length);
+console.log("TOKEN EXISTS:", !!process.env.DISCORD_TOKEN);
+console.log("TOKEN LENGTH:", process.env.DISCORD_TOKEN?.length);
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
