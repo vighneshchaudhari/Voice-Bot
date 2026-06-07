@@ -54,3 +54,5 @@ console.log("ENV KEYS:", Object.keys(process.env));
 client.login(process.env.TOKEN)
     .then(() => console.log('Login request sent'))
     .catch(console.error);
+console.log("Key =", process.env.Key);
+console.log("Value exists =", !!process.env.Value);
