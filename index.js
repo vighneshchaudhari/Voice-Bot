@@ -14,10 +14,9 @@ const {
 const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates]
 });
-client.once('clientReady', () => {
+client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
-
 // Replace with your trigger channel IDs
 const triggerChannels = [
     '1513027490392838154',
