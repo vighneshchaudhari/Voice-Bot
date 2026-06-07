@@ -41,11 +41,11 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
     }
 });
 
-client.login('process.env.TOKEN');
+client.login(process.env.TOKEN);
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
 
-client.login('process.env.TOKEN')
+client.login(process.env.TOKEN)
     .then(() => console.log('Login request sent'))
     .catch(console.error);
