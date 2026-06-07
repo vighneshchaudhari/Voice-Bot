@@ -41,7 +41,7 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
     }
 });
 
-client.login('MTUxMzAyOTMwNDcwNTg3NjA5OA.G0ebFe.fM3n5nOwfutdfQxZQiKBP7I8Za9O6Z-Yce7Chw');
+client.login('process.env.TOKEN');
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
