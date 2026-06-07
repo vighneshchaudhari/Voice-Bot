@@ -45,6 +45,7 @@ client.login(process.env.TOKEN);
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
+
 console.log("TOKEN LENGTH:", process.env.TOKEN?.length);
 client.login(process.env.TOKEN)
     .then(() => console.log('Login request sent'))
